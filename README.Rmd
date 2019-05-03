@@ -1,7 +1,10 @@
 ---
+title: "binomial"
+author: Ann Deng
+date: May 3, 2019
 output:
-  github_document:
-    html_preview: false
+  md_document:
+    variant: markdown_github
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -41,13 +44,13 @@ This package has been developed for Stat133, Sp2019 as an exercise in making pac
 
 Install the development version from GitHub via the package `"devtools"`:
 
-```r
+```{r}
 # development version from GitHub:
 #install.packages("devtools") 
 # install "cointoss" (without vignettes)
-devtools::install_github("gastonstat/cointoss")
+devtools::install_github("anndeng/binomial")
 # install "cointoss" (with vignettes)
-devtools::install_github("gastonstat/cointoss", build_vignettes = TRUE)
+devtools::install_github("anndeng/binomial", build_vignettes = TRUE)
 ```
 
 
@@ -57,7 +60,6 @@ devtools::install_github("gastonstat/cointoss", build_vignettes = TRUE)
 library(binomial)
 # make binomial random variable object
 binvar1 <- bin_variable(5, 0.5)
-binvar1
 # mode of binvar with 10 trials, 0.5 prob of success
 bin_mode(10, 0.5)
 # combinations of 2 successes in 5 trials
