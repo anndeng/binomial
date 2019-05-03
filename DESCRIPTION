@@ -1,0 +1,15 @@
+Package: binomial
+Title: Summary measures and distribution of binomial random variable
+Version: 0.0.0.9000
+Author: Ann Deng
+Maintainer: Ann Deng <adeng@berkeley.edu>
+Description: Functions to calculate summary measures and distribution, to visualize distribution, and to create and summarize binomial random variable object.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
